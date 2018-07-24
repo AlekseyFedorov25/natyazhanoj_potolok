@@ -1,0 +1,91 @@
+  <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Натяжные потолки</title>
+    <link rel="stylesheet" href="css/common.css">
+    <script type="text/javascript">
+      function f(){
+        if(window.matchMedia('(max-width: 999px)').matches)
+        {
+          wrap.setAttribute('align', 'center');
+        } else {wrap.setAttribute('align', 'right');}
+      }
+      window.onload = f;
+      window.onresize = f;
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+  </head>
+  <body>
+    <div class="top-container" align="center">
+     <span class="top-item" onclick="location.href = '#uslugi'"><p class="top-item-in">Услуги</p></span>
+     <span class="top-item" onclick="location.href = '#portfolio'"><p class="top-item-in">Галерея</p></span>
+     <span class="top-item" onclick="location.href = '#whyus'"><p class="top-item-in">Почему мы</p></span>
+     <span class="top-item" id="lvrq" onclick="location.href = '#leavereq'"><p class="top-item-in">Оставить заявку</p></span>
+     <div id="grafik-top">
+      <p>График работы:</p>
+      <p>10:00 - 19:00 (ПН-ПТ)</p>
+      <p> СБ, ВС - Выходные </p>
+    </div>
+  </div>
+
+  <div class="wrapper" id="wrap" align="">
+    <div class="wrap-blocks" id="uslugi">
+      <p>
+        Наша компания предоставляет услуги по установке натяжных потолков. Также вы можете обратиться к нам по поводу их обслуживания. По всем дополнительным вопросам вы можете обратиться удобным для вас способом из блока "Контакты".
+      </p>
+    </div>
+
+    <div id="contacts">
+      <div id="contactschld"></div>
+      <div id="contactschld2"></div>
+      <div id="contactschld3"></div>
+      <div id="contactschld4"></div>
+      <p>
+        Наши контакты:
+        <br>
+        Почта: <br> xxxxxx.xxxxx@xxxxx.xx
+        <br>
+        Телефон: <br> 8(9XX)XXX-XX-XX
+        <br>
+        <a href="#">Сообщество</a> в VK
+      </p>
+    </div>
+
+    <div class="wrap-blocks" id="portfolio">
+      <p>
+        Здесь вы можете видеть примеры наших работ. По желанию вы можете связаться с предыдущими клиентами (спросив контакты у менеджера), если до сих пор сомневаетесь в выборе услуг нашей компании.
+      </p>
+      <div  id="image-block" align="center">
+        <img src="http://dl4.joxi.net/drive/2018/06/11/0022/0484/1499620/20/c47b71437f.jpg" alt="" class="default-images">
+        <img src="http://dl4.joxi.net/drive/2018/06/11/0022/0484/1499620/20/ceb5e9ef51.jpg" alt="" class="default-images">
+        <img src="http://dl3.joxi.net/drive/2018/06/11/0022/0484/1499620/20/4c92690754.jpg" alt="" class="default-images">
+        <img src="http://dl3.joxi.net/drive/2018/06/11/0022/0484/1499620/20/dc60424fa1.jpg" alt="" class="default-images">
+      </div>
+    </div>
+    <div class="wrap-blocks" id="whyus">
+      <p>
+        Если все же некоторые сомнения остались, то мы постараемся развеять их следующими доводами по поводу работы нашей компании.
+        <ul class="pluspskk">
+          <li class="pluspsk">За выполнением работы можно наблюдать лично, если у вас есть такое желание.</li>
+          <li class="pluspsk">Мы сами находим материалы по лучшим ценам и предоставляем отчеты с чеками</li>
+          <li class="pluspsk">Перед началом работ подписывается подробный договор, поэтому нет необходимости вникать в юридические тонкости</li>
+          <li class="pluspsk">Мы даем гарантию сроком в 5 лет, ведь мы все делаем качественно и не оставляем шансов недочетам проявиться.</li>
+          <li class="pluspsk">По вашему желанию мы можем установить осветительное оборудование при монтаже натяжного потолка (или его ремонте).</li>
+        </ul>
+      </p>
+    </div>
+    <div class="wrap-blocks" id="leavereq">
+      <p>
+        Здесь вы можете оставить заявку с указанием ваших контактных данных и комментария, в котором вы можете уточнить, какой вопрос вас интересует.
+      </p>
+      <form method="POST" id="contactForm" name="sentMessage" action="contact_me.php">
+          <input class="form-control" id="name" type="text" placeholder="Имя *" data-validation-required-message="Пожалуйста введите Ваше имя.">
+          <input class="form-control" id="phone" type="tel" placeholder="Телефон *" data-validation-required-message="Пожалуйста введите номер телефона.">
+          <textarea class="form-control" id="message" placeholder="Сообщение (Не обязательно)" novalidate></textarea>
+          <button type="submit">Получить консультацию</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  </html>
